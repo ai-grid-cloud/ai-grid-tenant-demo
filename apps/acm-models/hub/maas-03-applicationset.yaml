@@ -14,6 +14,7 @@ spec:
         labelSelector:
           matchLabels:
             cluster.open-cluster-management.io/placement: acm-models-maas
+        requeueAfterSeconds: 60
   syncPolicy:
     applicationsSync: sync
     preserveResourcesOnDeletion: false
